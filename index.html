@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVS STORE | Murder VS Sheriff</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MVS <span>STORE</span></div>
+        
+        <div class="cart-container" onclick="toggleCarrito()">
+            <i class="fas fa-shopping-cart cart-icon-main"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>EQUÍPATE PARA LA BATALLA</h1>
+            <p>Las mejores armas de Murder VS Sheriff</p>
+        </section>
+        <section class="products-grid" id="productos"></section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCarrito()">&times;</span>
+            <h2>🛒 Carrito</h2>
+            
+            <div id="cart-items-list" class="scrollable-cart">
+                </div>
+
+            <div class="cart-summary-box">
+                <div class="cart-total">Total: <span id="total-robux">0</span> R$</div>
+                <p class="instrucciones">Envía una captura del carrito a nuestro Instagram.</p>
+                <p class="tiempo">Tiempo de respuesta aproximado: 30 minutos.</p>
+                
+                <div class="social-links">
+                    <a href="https://instagram.com/mvs_store12" target="_blank">
+                        <img src="img/instagram.png" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://tiktok.com/@TU_USUARIO" target="_blank">
+                        <img src="img/tiktok.png" alt="TikTok" class="social-icon-img">
+                    </a>
+                </div>
+            </div>
+            
+            <button class="btn-close-cart" onclick="toggleCarrito()">Seguir comprando</button>
+        </div>
+    </div>
+
+    <script src="jss/script.js"></script>
+    <span class="close" onclick="toggleCarrito()" style="position:absolute; right:20px; top:10px; cursor:pointer; font-size:30px;">&times;</span>
+</body>
+</html>
